@@ -37,6 +37,10 @@
               </li>
               <li>
                 <% if current_user.present? %>
+                <%= link_to "Bookings",url:"/bookings/#{current_user.id}/index" %>
+              </li>
+              <li>
+                <% if current_user.present? %>
                 <%= link_to "Sign Out",destroy_user_session_path, method: 'delete' %>
                 <% else %>
                 <%= link_to "Sign In",new_user_session_path %>
