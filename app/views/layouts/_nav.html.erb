@@ -37,7 +37,7 @@
               </li>
               <li>
                 <% if current_user.present? %>
-                <%= link_to "Bookings",url:"/bookings/#{current_user.id}/index" %>
+                <%= link_to "Bookings","/bookings/#{current_user.id}/index" %>
               </li>
               <li>
                 <% if current_user.present? %>
